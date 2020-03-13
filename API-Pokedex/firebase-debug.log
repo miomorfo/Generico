@@ -1,0 +1,59 @@
+[debug] [2020-03-13T17:34:44.436Z] ----------------------------------------------------------------------
+[debug] [2020-03-13T17:34:44.439Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\eortizma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-03-13T17:34:44.439Z] CLI Version:   7.15.0
+[debug] [2020-03-13T17:34:44.439Z] Platform:      win32
+[debug] [2020-03-13T17:34:44.439Z] Node Version:  v12.16.1
+[debug] [2020-03-13T17:34:44.442Z] Time:          Fri Mar 13 2020 14:34:44 GMT-0300 (GMT-03:00)
+[debug] [2020-03-13T17:34:44.443Z] ----------------------------------------------------------------------
+[debug] [2020-03-13T17:34:44.443Z] 
+[debug] [2020-03-13T17:34:44.458Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-13T17:34:44.460Z] > authorizing via signed-in user
+[debug] [2020-03-13T17:34:44.460Z] [iam] checking project pokedex-generica for permissions ["firebase.projects.get"]
+[debug] [2020-03-13T17:34:44.463Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pokedex-generica:testIamPermissions  
+
+[debug] [2020-03-13T17:34:45.528Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-13T17:34:45.534Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pokedex-generica  
+ 
+[debug] [2020-03-13T17:34:45.810Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\API-Pokedex'...
+[info] 
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\API-Pokedex\functions" for Cloud Functions...
+[debug] [2020-03-13T17:34:48.001Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-13T17:34:48.001Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-13T17:34:48.002Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-13T17:34:48.002Z] [worker-~diagnostic~-33c22b8d-c01a-41ca-8923-cdbc2090d2ff]: Assigning socketPath: \\?\pipe\C:\API-Pokedex\functions\10292
+[debug] [2020-03-13T17:34:48.003Z] [worker-~diagnostic~-33c22b8d-c01a-41ca-8923-cdbc2090d2ff]: BUSY
+[debug] [2020-03-13T17:34:48.859Z] [runtime-status] [10292] Functions runtime initialized. {"cwd":"C:\\API-Pokedex\\functions","node_version":"12.16.1"}
+[debug] [2020-03-13T17:34:48.859Z] [runtime-status] [10292] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-13T17:34:48.866Z] [runtime-status] [10292] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\API-Pokedex\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-13T17:34:48.871Z] [runtime-status] [10292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\API-Pokedex\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-13T17:34:48.873Z] [runtime-status] [10292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\API-Pokedex\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[helloWorld]: http function initialized (http://localhost:5000/pokedex-generica/us-central1/helloWorld).
+[debug] [2020-03-13T17:34:48.990Z] [worker-~diagnostic~-33c22b8d-c01a-41ca-8923-cdbc2090d2ff]: IDLE
+[debug] [2020-03-13T17:34:57.058Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-13T17:34:57.059Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-13T17:34:57.059Z] Accepted request GET /pokedex-generica/us-central1/helloWorld --> helloWorld
+[debug] [2020-03-13T17:34:57.082Z] [worker-pool] addWorker(helloWorld)
+[debug] [2020-03-13T17:34:57.083Z] [worker-pool] Adding worker with key helloWorld, total=1
+[debug] [2020-03-13T17:34:57.083Z] [worker-pool] submitWork(triggerId=helloWorld)
+[debug] [2020-03-13T17:34:57.083Z] [worker-helloWorld-763d96af-4e7d-450c-a726-a3881a42509e]: Assigning socketPath: \\?\pipe\C:\API-Pokedex\functions\14648
+[debug] [2020-03-13T17:34:57.083Z] [worker-helloWorld-763d96af-4e7d-450c-a726-a3881a42509e]: BUSY
+[debug] [2020-03-13T17:34:58.006Z] [runtime-status] [14648] Functions runtime initialized. {"cwd":"C:\\API-Pokedex\\functions","node_version":"12.16.1"}
+[debug] [2020-03-13T17:34:58.008Z] [runtime-status] [14648] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-13T17:34:58.016Z] [runtime-status] [14648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\API-Pokedex\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-13T17:34:58.021Z] [runtime-status] [14648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\API-Pokedex\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-13T17:34:58.023Z] [runtime-status] [14648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\API-Pokedex\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-13T17:34:58.137Z] [runtime-status] [14648] Trigger "helloWorld" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-03-13T17:34:58.139Z] [runtime-status] [14648] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"}
+[debug] [2020-03-13T17:34:58.139Z] [runtime-status] [14648] Running helloWorld in mode HTTPS
+[debug] [2020-03-13T17:34:58.150Z] [runtime-status] [14648] Attempting to listen to socketPath: \\?\pipe\C:\API-Pokedex\functions\14648
+[debug] [2020-03-13T17:34:58.162Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-13T17:34:58.186Z] [runtime-status] [14648] Ephemeral server handling GET request
+[debug] [2020-03-13T17:34:58.196Z] [runtime-status] [14648] Ephemeral server survived.
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-03-13T17:34:58.210Z] [worker-helloWorld-763d96af-4e7d-450c-a726-a3881a42509e]: IDLE
+[debug] [2020-03-13T17:34:58.211Z] [work-queue] {"queueLength":0,"workRunningCount":0}
