@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F44336"
+        android:orientation="vertical"
+        android:id="@+id/plashScreen">
+
+        <ImageView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/pokeball"
+            android:scaleType="centerInside"
+            android:padding="80dp"/>
+    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
